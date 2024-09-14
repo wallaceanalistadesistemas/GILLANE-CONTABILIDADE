@@ -1,0 +1,291 @@
+/* Reset de estilos e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #cac7c7;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #2b2a2a;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #66db97;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: rgb(236, 192, 192);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .faixa-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: faixa 40s linear infinite;
+    font-size: 20px; /* Aumentar o tamanho da fonte */
+    color: #020202;
+}
+
+@keyframes faixa {
+    0% {
+        transform: translateX(4%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+  
+#banner {
+  background-image: url('img/pexels-pixabay-33045.jpg');
+  background-size: cover;
+  background-position: center bottom 50%; 
+  text-align: center;
+  padding: 200px 0;
+  
+}
+
+
+
+
+  #banner h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(255, 254, 254);
+    
+  }
+
+  #banner p{
+    color: rgb(253, 253, 253);
+    
+  }
+  
+  #servicos ul {
+    list-style-type: none;
+    margin-top: 40px;
+  }
+  
+  #servicos ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  #equipe {
+    background-color: #fff;
+    padding: 40px 0;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    margin-top: 10px;
+  }
+  
+  #contato {
+    background-color: #cac7c7;
+    padding: 40px 0;
+  }
+  
+  #contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #contato form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #contato form input,
+  #contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #contato form button {
+    background-color: #149c6f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #contato form button:hover {
+    background-color: #0e644f;
+  }
+
+  .whatsapp-button {
+    background-color: #25D366;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 39%;
+    padding: 3%;
+    margin-top: -50px;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128C7E;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+
+
+  @media (max-width: 481px) {
+
+    header nav ul li a {
+
+      font-size: 1.5rem;
+    }
+
+    .container h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 210%;
+    }
+
+    .container ul {
+      text-align: center;
+      font-size: 1rem;
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    #banner h2 {
+
+font-size: 2rem;
+background: rgba(0, 0, 0, 0.4);
+color: rgb(236, 192, 192);
+
+
+}
+
+#banner p {
+
+  background: rgba(0, 0, 0, 0.4);
+  color: rgb(236, 192, 192);
+
+}
+
+#banner {
+
+  opacity: 1;
+}
+
+#servicos h2 {
+
+  text-align: center;
+}
+
+#servicos {
+
+  color: #0e5840;
+}
+
+#equipe h2 {
+
+  text-align: center;
+  margin-top: -60px;
+  padding: 50px;
+}
+
+#faixa-content {
+ 
+  display: none;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
+  padding: 8%;
+  margin-top: -50px;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+  }
